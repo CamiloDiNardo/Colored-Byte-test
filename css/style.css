@@ -1,0 +1,195 @@
+/* Fuente */
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter-Regular.ttf);
+}
+/* revisar clases repetidas */
+body {
+  width: 1440px; /*El Figma tiene la hoja asi, x eso le puse estas medidas.*/
+  height: 1024px;
+  font-size: 12px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+
+/*NavBar*/
+.feedContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.feed {
+  width: 527px;
+  height: 739px;
+  border: 1px solid #dedede;
+  box-shadow: -1px 7px 8px -5px rgba(0, 0, 0, 0.14);
+  border-radius: 5px;
+}
+.navContainer {
+  display: flex;
+  width: 526px;
+  height: 75px;
+  align-items: center;
+}
+.navImg {
+  width: 50px;
+  height: 50px;
+  margin-left: 25px;
+}
+.navContainerInfo {
+  width: 117px;
+  height: 38px;
+  margin-left: 25px;
+}
+.navTitle {
+  position: relative;
+  top: -10px;
+  width: 77px;
+  height: 17px;
+  font-weight: bold 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.navUbication {
+  position: relative;
+  top: -15px;
+  width: 117px;
+  height: 12px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 9px;
+}
+/* Swiper */
+.swiper {
+  width: 526px;
+  height: 325px;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  /*display: block; esto va?*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* icons */
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 92px;
+  height: 25px;
+}
+.heart {
+  height: 20.85px;
+  width: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.comment {
+  height: 19.98px;
+  width: 19.98px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.share {
+  height: 17.33px;
+  width: 20px;
+  margin-left: 14px;
+}
+.shareLine {
+  position: relative;
+  height: 7.08px;
+  width: 12.78px;
+  right: 12px;
+  top: -4px;
+}
+/* Post Descripcion */
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 477px;
+  text-align: justify;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-weight: 400;
+  line-height: 14.52px;
+  margin-bottom: 5px;
+}
+/* Chat */
+.commentContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 90%;
+  height: 150px;
+  min-height: 100px;
+  max-height: 170px;
+  text-align: justify;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-weight: 400;
+  line-height: 10px;
+}
+span {
+  margin: 0;
+  max-width: 100%;
+}
+/* Input */
+.containerInput {
+  display: flex; /* le ponemos display flex al container del boton, para que el boton se ponga al lado del input.*/
+  width: 477px;
+  margin: 0px 25px 20px 25px;
+}
+.messages {
+  width: 477px;
+  height: 55px;
+  background-color: #f1f1f1;
+  border: none;
+  padding-left: 15px;
+  font-weight: 400;
+  line-height: 14.52px;
+  border-radius: 5px 0 0 5px;
+  outline: none; /* Cuando tiene focus el input se crea un outline automaticamente, eso lo sacamos xq no queremos ese borde */
+}
+.post {
+  background-color: #f1f1f1; /* recodatorio: inherit solo hereda propiedades del padre, no entre hermanos. X eso tenemos que repetir el background color*/
+  color: #3d8aff;
+  border: none;
+  padding-right: 15px;
+  line-height: 14.52px;
+  border-radius: 0 5px 5px 0;
+}
+.post:hover {
+  cursor: pointer;
+}
+.yourCommentary {
+  border: 3px solid magenta;
+}
